@@ -16,6 +16,7 @@ public class GlobalExceptionController extends RuntimeException{
         map.put("message", ressourceNotFoundException.getMessage());
         map.put("success", false);
         map.put("status", 404);
+
         return ResponseEntity.status(404).body(map);
     }
 
